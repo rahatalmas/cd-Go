@@ -7,5 +7,12 @@ import (
 
 func main() {
 	fmt.Println("hello pretty <3")
-	tree.PTree()
+	t := tree.Create()
+	n := 10
+	var val int
+	for i := 0; i < n; i++ {
+		fmt.Scan(&val)
+		t.Insert(val)
+	}
+	t.InOrderTraverse()
 }
