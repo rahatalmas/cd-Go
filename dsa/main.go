@@ -7,12 +7,21 @@ import (
 
 func main() {
 	fmt.Println("hello pretty <3")
-	t := tree.Create()
-	n := 10
-	var val int
-	for i := 0; i < n; i++ {
-		fmt.Scan(&val)
-		t.Insert(val)
+	for {
+		tree.T()
+		t := tree.Create()
+		var n, val int
+		fmt.Scanln(&n)
+		for i := 0; i < n; i++ {
+			fmt.Scan(&val)
+			t.Insert(val)
+		}
+		t.InOrderTraverse()
+		height := t.TreeHeight()
+		fmt.Println("Depth of this Tree is: ", height)
+		var u, v int
+		fmt.Scanln(&u, &v)
+		t.UpdateNode(u, v)
+		t.InOrderTraverse()
 	}
-	t.InOrderTraverse()
 }

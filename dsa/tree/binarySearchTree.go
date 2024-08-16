@@ -27,6 +27,7 @@ func (T *Tree) insertUtil(node *treeNode, val int) {
 		}
 	}
 }
+
 func inorder(node *treeNode) {
 	if node == nil {
 		return
@@ -51,11 +52,29 @@ func (T *Tree) Insert(val int) {
 	T.insertUtil(T.root, val)
 }
 
+func (T *Tree) UpdateNode(newVal int, oldVal int) {
+	updateUtil(T.root, oldVal)
+	T.Insert(newVal)
+}
+
+func (T *Tree) DeleteNode(val int) {
+
+}
+
 func (T *Tree) InOrderTraverse() {
 	inorder(T.root)
 	fmt.Print("\n")
 }
 
+func (T *Tree) TreeHeight() int {
+	return findHeight(T.root)
+}
+
 func Create() *Tree {
 	return new(Tree)
+}
+
+func T() {
+	fmt.Println("Tree file Testing...")
+	filetest()
 }
