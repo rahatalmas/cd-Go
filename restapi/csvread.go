@@ -8,8 +8,9 @@ import (
 	"os"
 )
 
-func h() {
+func H() {
 	file, err := os.Open("data.csv")
+	fmt.Println(file.Name())
 	if err != nil {
 		fmt.Println("file open failed")
 	}
