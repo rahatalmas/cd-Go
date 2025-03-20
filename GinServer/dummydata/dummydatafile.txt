@@ -1,0 +1,1 @@
+{"user_id":1,"user_name":"Itachi","email":"Itachi@gmail.com","role":"admin","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJ1c2VyIiwiZXhwIjoxNzM5MTUzOTM2LCJpYXQiOjE3MzkxNTAzMzYsImlzcyI6Imdpbi1zZXJ2ZXIiLCJzdWIiOiJJdGFjaGkifQ.cE9Qpq4vJG2iG8gbmu3xBY0YJB0g2UKpgupUbUvdGeo"}

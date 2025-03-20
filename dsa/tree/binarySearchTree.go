@@ -34,7 +34,6 @@ func inorder(node *treeNode) {
 	}
 	inorder(node.left)
 	fmt.Print(node.value, " ")
-
 	inorder(node.right)
 }
 
